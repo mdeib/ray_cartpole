@@ -11,7 +11,11 @@ config = {}
 # algorithm specific parameters can be found by clicking on the corresponding hyperlink
 # parameters used for all algorithms are here: https://docs.ray.io/en/master/rllib-training.html#common-parameters
 algorithm = "DQN"
+
+# Any gym environment can be plugged in here
 env_name = "CartPole-v1"
+
+# architecture defined here, list of neurons in each hidden layer, empty list is linear model
 arch = [4, 4]
 
 # These configs define the hyperparameters for the algorithm
@@ -50,11 +54,12 @@ config["DQN"] = {
 	"framework": "torch"
 }
 
-# This command runs the actual training used the parameters defined above
+# This command runs the actual training using the parameters defined above
 results = tune.run(
     algorithm,
     name = algorithm + "_" + str(arch) + "_" + env_name + str(time.time()),
     config = config[algorithm],
-    verbose = 3)
+    verbose = 3,
+    local_dir = "checkpoints")
 
 ray.shutdown()
