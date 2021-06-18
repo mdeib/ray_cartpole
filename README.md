@@ -84,10 +84,10 @@ We can also look at DQN. Like PPO the DQN algorithm also makes use of past exper
 ## DQN Network Depth Mean Reward
 ![DQN Sizes](Plots/DQN_mean_reward_sizes.PNG)
 
-**Light Blue - Four hidden Layers 32 neurons each**
-**Red - Three hidden Layers 32 neurons each**
-**Blue - Two hidden Layers 32 neurons each**
-**Orange - One hidden Layer of 32 neurons**
+**Light Blue - Four hidden Layers 32 neurons each** <br />
+**Red - Three hidden Layers 32 neurons each** <br />
+**Blue - Two hidden Layers 32 neurons each** <br />
+**Orange - One hidden Layer of 32 neurons** <br />
 <br />
 
 Lastly we can quickly explore the effect of using deeper networks on learning. Cartpole is a very simple problem and so using deeper networks than is necesary can lead to unstable learning. Therefore it is important not to use a network much bigger than you need (although in this case the effect could likely be mitigated by tuning the hyperparameters for the larger networks).
