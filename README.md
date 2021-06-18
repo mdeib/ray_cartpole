@@ -34,11 +34,11 @@ Below is an exploration of the impact a network's size has on learning (across d
 
 ![PG](Plots/PG_mean_reward.PNG)
 
-Orange - Two hidden Layers 32 neurons each
-Pink - One hidden Layer of 32 neurons
-Light Blue - Two hidden Layers 4 neurons each
-Red - One hidden Layer of 4 neurons
-Blue - Linear
+**Orange - Two hidden Layers 32 neurons each **<br />
+**Pink - One hidden Layer of 32 neurons **<br />
+**Light Blue - Two hidden Layers 4 neurons each **<br />
+**Red - One hidden Layer of 4 neurons **<br />
+**Blue - Linear **<br />
 
 ![PPO](Plots/PPO_mean_reward.PNG)
 
