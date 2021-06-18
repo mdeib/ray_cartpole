@@ -2,6 +2,8 @@
 
 Simple script to test out basic RL algorithms on Cartpole
 
+## Usage
+
 Python dependencies are in requirements.txt
 
 ```
@@ -25,3 +27,47 @@ And the results can be seen in tensorboard
 ```
 tensorboard --logdir <checkpoints_directory_path>
 ```
+
+## Experiments
+
+Below is an exploration of the impact a network's size has on learning (across different algorithms
+
+![PG](Plots/PG_mean_reward.png)
+
+Orange - Two hidden Layers 32 neurons each
+Pink - One hidden Layer of 32 neurons
+Light Blue - Two hidden Layers 4 neurons each
+Red - One hidden Layer of 4 neurons
+Blue - Linear
+
+![PPO](Plots/PPO_mean_reward.png)
+
+Light Blue - Two hidden Layers 32 neurons each
+Red - One hidden Layer of 32 neurons
+Blue - Two hidden Layers 4 neurons each
+Orange - One hidden Layer of 4 neurons
+Pink - Linear
+
+![PPO Entropy](Plots/PPO_entropy.png)
+
+Light Blue - Two hidden Layers 32 neurons each
+Red - One hidden Layer of 32 neurons
+Blue - Two hidden Layers 4 neurons each
+Orange - One hidden Layer of 4 neurons
+Pink - Linear
+
+![DQN](Plots/DQN_mean_reward.png)
+
+Red - Two hidden Layers 32 neurons each
+Orange - One hidden Layer of 32 neurons
+Green - Two hidden Layers 4 neurons each
+Pink - One hidden Layer of 4 neurons
+Light Blue - Linear
+Blue - Linear (try #2)
+
+![DQN Sizes](Plots/DQN_mean_reward_sizes.png)
+
+Light Blue - Four hidden Layers 32 neurons each
+Red - Three hidden Layers 32 neurons each
+Blue - Two hidden Layers 32 neurons each
+Orange - One hidden Layer of 32 neurons
