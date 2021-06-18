@@ -32,7 +32,7 @@ tensorboard --logdir <checkpoints_directory_path>
 
 Below is an exploration of the impact a network's size has on learning (across different algorithms
 
-![PG](Plots/PG_mean_reward.png)
+![PG](Plots/PG_mean_reward.PNG)
 
 Orange - Two hidden Layers 32 neurons each
 Pink - One hidden Layer of 32 neurons
@@ -40,7 +40,7 @@ Light Blue - Two hidden Layers 4 neurons each
 Red - One hidden Layer of 4 neurons
 Blue - Linear
 
-![PPO](Plots/PPO_mean_reward.png)
+![PPO](Plots/PPO_mean_reward.PNG)
 
 Light Blue - Two hidden Layers 32 neurons each
 Red - One hidden Layer of 32 neurons
@@ -48,7 +48,7 @@ Blue - Two hidden Layers 4 neurons each
 Orange - One hidden Layer of 4 neurons
 Pink - Linear
 
-![PPO Entropy](Plots/PPO_entropy.png)
+![PPO Entropy](Plots/PPO_entropy.PNG)
 
 Light Blue - Two hidden Layers 32 neurons each
 Red - One hidden Layer of 32 neurons
@@ -56,7 +56,7 @@ Blue - Two hidden Layers 4 neurons each
 Orange - One hidden Layer of 4 neurons
 Pink - Linear
 
-![DQN](Plots/DQN_mean_reward.png)
+![DQN](Plots/DQN_mean_reward.PNG)
 
 Red - Two hidden Layers 32 neurons each
 Orange - One hidden Layer of 32 neurons
@@ -65,7 +65,7 @@ Pink - One hidden Layer of 4 neurons
 Light Blue - Linear
 Blue - Linear (try #2)
 
-![DQN Sizes](Plots/DQN_mean_reward_sizes.png)
+![DQN Sizes](Plots/DQN_mean_reward_sizes.PNG)
 
 Light Blue - Four hidden Layers 32 neurons each
 Red - Three hidden Layers 32 neurons each
